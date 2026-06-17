@@ -223,23 +223,13 @@ par l’URL du backend Render.
 
 ## Liens du projet
 
-Lien GitHub :
+Lien GitHub : https://github.com/motbravea/khalid-asseffar-evaluation-finaleH26
 
-```text
-À ajouter après la création du dépôt GitHub
-```
+Lien backend Render : https://bibliotheque-backend-ggrx.onrender.com
 
-Lien backend Render :
 
-```text
-À ajouter après le déploiement
-```
+Lien frontend Vercel : https://khalid-asseffar-evaluation-finale-h26-n29f64qe6.vercel.app/
 
-Lien frontend Vercel :
-
-```text
-À ajouter après le déploiement
-```
 
 ## Auteur
 
