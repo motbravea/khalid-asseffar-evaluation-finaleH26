@@ -6,6 +6,8 @@ function MesEmprunts() {
   const [emprunts, setEmprunts] = useState([]);
   const [message, setMessage] = useState("");
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   const rechercherEmprunts = (e) => {
     e.preventDefault();
 
@@ -16,7 +18,7 @@ function MesEmprunts() {
     }
 
     axios
-      .get("http://localhost:5000/api/emprunts", {
+      .get(`${API_URL}/api/emprunts`, {
         params: { email: email },
       })
       .then((res) => {

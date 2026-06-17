@@ -4,8 +4,10 @@ import axios from "axios";
 function Livres() {
   const [livres, setLivres] = useState([]);
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   useEffect(() => {
-    axios.get("http://localhost:5000/api/livres").then((res) => {
+    axios.get(`${API_URL}/api/livres`).then((res) => {
       setLivres(res.data);
     });
   }, []);
