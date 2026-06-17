@@ -14,6 +14,10 @@ const empruntsRoutes = require("./routes/empruntsRoutes");
 app.use("/api/livres", livresRoutes);
 app.use("/api/emprunts", empruntsRoutes);
 
-app.listen(process.env.PORT, () => {
+if (require.main === module) {
+  app.listen(process.env.PORT, () => {
     console.log(`Serveur lancé sur le port ${process.env.PORT}`);
-});
+  });
+}
+
+module.exports = app;
